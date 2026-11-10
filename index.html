@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- first page -->
+    <section id="home" class="page home">
+        <div class="home-card">
+            <div class="emoji">&#127874;</div>
+            <h1>Age Calculator</h1>
+            <p>Discover your age in a beautiful way!</p>
+
+            <button onclick="openCalculator()">
+                Start Calculator
+            </button>
+        </div>
+    </section>
+
+    <!-- second page -->
+    <section id="calculator" class="page calculator hidden">
+        <div class="calc-card">
+
+            <h2>Calculate Your Age</h2>
+            <p>Enter your birth date:</p>
+
+            <label> Birth of Date</label>
+            <input type="date" id="dob">
+
+            <button onclick="calculateAge()">
+                Calculate Age
+            </button>
+
+            <button class="reset">
+                Reset
+            </button>
+
+            <div id="result">
+                Your Result will appear here &#127874;
+            </div>
+
+            <button class="back" onclick="goHome()">
+                Back to Home 
+            </button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

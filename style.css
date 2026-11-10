@@ -1,0 +1,223 @@
+
+/* GENERAL CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e8faff;
+}
+
+/* COMMON PAGE */
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #b8ecf5, #c5f5e7, #fbd5e8);
+}
+
+/* HIDE PAGE */
+
+.hidden {
+    display: none;
+}
+
+/* HOME PAGE */
+
+.home-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 50px 35px;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 12px 35px rgba(20, 100, 110, 0.15);
+}
+
+.emoji {
+    font-size: 75px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #159b9b;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.home-card p {
+    color: #63878b;
+    font-size: 16px;
+    margin: 15px 0 25px;
+}
+
+/* BUTTONS */
+
+button {
+    width: 100%;
+    max-width: 260px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #24b8c4, #22b887);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px #24b8c455;
+}
+
+/* CALCULATOR PAGE */
+
+.calculator {
+    background: linear-gradient(135deg, #b8ecf5, #c5f5e7, #fbd5e8);
+}
+
+.calc-card {
+    width: 100%;
+    max-width: 480px;
+    padding: 40px 35px;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 12px 35px rgba(20, 100, 110, 0.15);
+}
+
+/* HEADING */
+
+h2 {
+    color: #159b9b;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.calc-card p {
+    color: #63878b;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* DATE INPUT */
+
+label {
+    display: block;
+    text-align: left;
+    color: #328b82;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #b8e9e5;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #476b70;
+    outline: none;
+}
+
+input[type="date"]:focus {
+    border-color: #24b8c4;
+}
+
+/* RESET BUTTON */
+
+.reset {
+    background: linear-gradient(135deg, #ff69a6, #ec3280);
+}
+
+.reset:hover {
+    box-shadow: 0 7px 18px #ec328055;
+}
+
+/* RESULT */
+
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    color: #159b9b;
+    background: #e8faf5;
+    border: 2px dashed #73cfb1;
+    border-radius: 15px;
+    padding: 20px 12px;
+    margin-top: 22px;
+    line-height: 1.7;
+}
+
+#result h3 {
+    font-size: 18px;
+    color: #ec3280;
+    margin-bottom: 8px;
+}
+
+#result h2 {
+    font-size: 22px;
+    color: #159b9b;
+    margin: 0;
+}
+
+/* BACK BUTTON */
+
+.back {
+    background: linear-gradient(135deg, #ff69a6, #ec3280);
+    margin-top: 22px;
+}
+
+.back:hover {
+    box-shadow: 0 7px 18px #ec328055;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 500px) {
+
+    .page {
+        padding: 18px;
+    }
+
+    .home-card,
+    .calc-card {
+        max-width: 100%;
+        padding: 35px 22px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .emoji {
+        font-size: 60px;
+    }
+
+    button {
+        max-width: 100%;
+    }
+
+    #result {
+        font-size: 16px;
+    }
+
+    #result h2 {
+        font-size: 19px;
+    }
+}
